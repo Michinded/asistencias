@@ -30,7 +30,7 @@ class UserContoller extends Controller
     }
 
     public function all(){
-        // Traer todos los usuarios
+        // Traer todos los usuarios de la base de datos
         $users = User::all();
         // Retornar la vista con los usuarios
         return view('usuarios.users', compact('users'));
